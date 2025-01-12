@@ -1,127 +1,287 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo Fabiano Reef</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Fabiano Reef</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles2.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-<header class="topo">
-    <img src="logofabianosite.jpg" alt="logo" class="logo">
-</header>
-<!--BANNER-->  
-    <div class="banner">
-        <img src="bannerpromocao.jpg" alt="Banner">
+    <!-- HEADER -->
+    <div class="container">
+        <header>
+            <div class="hamburger-menu">
+                <i class="fas fa-bars menu-icon"></i>
+            </div>
+            <div class="side-menu">
+                <div class="menu-header">
+                    <h2>Menu</h2>
+                    <button class="close-btn">&#10005;</button>
+                </div>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="#">Zoanthus & Palythoas</a></li>
+                    <li><a href="#">Corais Soft</a></li>
+                    <li><a href="#">Corais LPS</a></li>
+                    <li><a href="#">Corais SPS</a></li>
+                    <li><a href="#">Anêmonas</a></li>
+                    <li><a href="#">Outros</a></li>
+                </ul>
+                <div class="account-cart2">
+                    <i class="fas fa-user user-icon"></i>
+                    <div class="account-info">
+                        <div class="account-name">MINHA CONTA</div>
+                        <a href="#">Entrar / Cadastrar</a>
+                    </div>
+                    </div>
+            </div>
+            <img src="logofabianoreef.jpg" alt="Logo" class="logo">
+            <div class="search-bar">
+                <input type="text" placeholder="PROCURE SEU CORAL">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="account-cart">
+                <i class="fas fa-user user-icon"></i>
+                <div class="account-info">
+                    <div class="account-name">MINHA CONTA</div>
+                    <a href="#">Entrar / Cadastrar</a>
+                </div>
+                <div class="icon">
+                    <img src="https://cdn-icons-png.flaticon.com/512/34/34568.png" alt="Cart">
+                </div>
+            </div>
+        </header>
+        
+        <!-- BARRA DE CATEGORIAS -->
+        <div class="category-bar">
+            <ul>
+                <li><a href="#">Zoanthus & Palythoas</a></li>
+                <li><a href="#">Corais Soft</a></li>
+                <li><a href="#">Corais LPS</a></li>
+                <li><a href="#">Corais SPS</a></li>
+                <li><a href="#">Anêmonas</a></li>
+                <li><a href="#">Outros</a></li>
+            </ul>
+        </div>
     </div>
-<!--BANNER--> 
-
-<!--BARRA DE PESQUISA-->
-<div class="barra-de-pesquisa">
-    <input type="text" id="pesquisa" placeholder="BUSQUE SEU CORAL" autocomplete="off">
-    <i class="fas fa-search"></i> <!-- Ícone da lupa -->
-</div>
-<!--BARRA DE PESQUISA-->
-
-<!--PRODUTOS-->
-<div class="corpo-produtos">
-    <h2 class="texto">Zoanthus e Palythoas</h2>
-    <div class="linha">
-
-
-        <div class="coluna">
-            <img src="zoanthus/zoanthus-oompa-loompa.jpg" alt="coral1">
-            <h4>Zoanthus Oompa Lompa</h4>
-            <div class="estrelas">
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-            </div>
-            <p>R$ 35,00</p>
-        </div>
-
-        <div class="coluna">
-            <img src="palythoas/palythoa-gmk.jpg" alt="coral1">
-            <h5>Palythoa Grand Master Krakatoa (GMK)</h5>
-            <div class="estrelas">
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-            </div>
-            <p>R$ 240,00</p>
-        </div>
-
-        <div class="coluna">
-            <img src="palythoas/palythoa-pandora.png" alt="coral1">
-            <h4>Palythoa Pandora</h4>
-            <div class="estrelas">
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-            </div>
-            <p>R$ 60,00</p>
-        </div>
-
-        <div class="coluna">
-            <img src="zoanthus/zoanthus-oompa-loompa.jpg" alt="coral1">
-            <h4>Zoanthus Oompa Lompa</h4>
-            <div class="estrelas">
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-            </div>
-            <p>R$ 35,00</p>
-        </div>
-
-        <div class="coluna">
-            <img src="palythoas/palythoa-mind-blowing.png" alt="coral1">
-            <h4>Palythoa Mind Blowing</h4>
-            <div class="estrelas">
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-            </div>
-            <p>R$ 30,00</p>
-        </div>
-
-        <div class="coluna">
-            <img src="palythoas/palythoa-pandora.png" alt="coral1">
-            <h4>Palythoa Pandora</h4>
-            <div class="estrelas">
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-            </div>
-            <p>R$ 60,00</p>
-        </div>
-
     
+        <!-- BANNER -->
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="img/banner1.png" alt="Banner 1">
+                <img src="img/banner2.png" alt="Banner 2">
+                <img src="img/banner3.gif" alt="Banner 3"> <!-- Adicionando o GIF -->
+            </div>
+            <div class="carousel-dots">
+                <span class="dot" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+            </div>
+        </div>
+
+    <main>
+              <!-- GRADE DE PRODUTOS -->
+        <div class="corpo-produtos">
+            <h2 class="texto">NOVIDADES ⭣      </h2>
+        
+                <!--- PRODUTOS --->
+        
+
+                
+                <div class="linha">
+
+                
+                    <div class="coluna">
+                      <h6>Pólipo</h6>
+                      <div class="image-container">
+                          <img src="img/palythoagmk.png" class="image-container2" />
+                      </div>
+                      <h4>Palythoa Grand Master Krakatoa (GMK)</h4>
+                      <div class="estrelas">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                      </div>
+                      <p>R$ 150,00</p>
+                  </div> 
+
+                  <div class="coluna">
+                    <h6>Peça</h6>
+                    <div class="image-container">
+                        <img src="img/Magician.webp" class="image-container2" />
+                    </div>
+                    <h4>Palythoa Grand Master Krakatoa (GMK)</h4>
+                    <div class="estrelas">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <p>R$ 90,00</p>
+                </div> 
+
+                <div class="coluna">
+                    <h6>Pólipo</h6>
+                    <div class="image-container">
+                        <img src="img/palythoagmk.png" class="image-container2" />
+                    </div>
+                    <h4>Palythoa Grand Master Krakatoa (GMK)</h4>
+                    <div class="estrelas">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <p>R$ 150,00</p>
+                </div> 
+            
+                <div class="coluna">
+                    <h6>Peça</h6>
+                    <div class="image-container">
+                        <img src="img/Magician.webp" class="image-container2" />
+                    </div>
+                    <h4>Palythoa Grand Master Krakatoa (GMK)</h4>
+                    <div class="estrelas">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <p>R$ 90,00</p>
+                </div>
+
+                  
+                  </div>
+            </div>
+
+            <h2 class="texto2">ESCOLHA POR CATEGORIA</h2>
+            <div class="linha-categorias">
+                <div class="categoria">
+                    <img src="img/palythoagmk.png" alt="Zoanthus">
+                    <span>Zoas e Palys</span>
+                </div>
+                <div class="categoria">
+                    <img src="img/xeniapompom.jpg" alt="Corais Soft">
+                    <span>Corais Soft</span>
+                </div>
+                <div class="categoria">
+                    <img src="img/corais-lps.webp" alt="Corais LPS">
+                    <span>Corais LPS</span>
+                </div>
+                <div class="categoria">
+                    <img src="img/Coral-Seriatopora.webp" alt="Corais SPS">
+                    <span>Corais SPS</span>
+                </div>
+                <div class="categoria">
+                    <img src="img/b7c8db_2b9e709626764d0e89ab0c5b17b4a518~mv2.webp" alt="Anêmonas">
+                    <span>Anêmonas</span>
+                </div>
+                <div class="categoria">
+                    <img src="img/D_NQ_NP_763747-MLB78764301965_082024-O.webp" alt="Outros">
+                    <span>Outros</span>
+                </div>
+            </div>
+
+
+
+
+            <!-- SEÇÃO DE DEPOIMENTOS -->
+<div class="secao-depoimentos">
+    <h2 class="titulo-depoimentos">⭣ O QUE NOSSOS CLIENTES DIZEM ⭣</h2>
+    <div class="linha-depoimentos">
+        <!-- Depoimento 1 -->
+        <div class="depoimento">
+            <p>"Os corais chegaram perfeitos! A qualidade e o cuidado no envio foram excelentes. Com certeza voltarei a comprar."</p>
+            <span>- João Silva, Ceará</span>
+        </div>
+        
+        <!-- Depoimento 2 -->
+        <div class="depoimento">
+            <p>"A variedade de corais é incrível! Sem contar o suporte ao cliente, que foi super atencioso."</p>
+            <span>- Maria Souza, Rio de Janeiro</span>
+        </div>
+        
+        <!-- Depoimento 3 -->
+        <div class="depoimento">
+            <p>"Recomendo a loja a todos que querem corais de qualidade. Fiquei muito satisfeito com minha compra."</p>
+            <span>- Carlos Almeida, Belo Horizonte</span>
+        </div>
     </div>
 </div>
+<div class="barra"></div>
+    </main>
+<!-- FOOTER -->
+<footer>
+    <div class="container-footer">
+        <!-- Logo e Redes Sociais -->
+        <div class="footer-coluna">
+            <img src="logofabianoreef.jpg" alt="Logo" class="footer-logo">
+            <div class="redes-sociais">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
 
-<!--PRODUTOS-->
+        <!-- Institucional -->
+        <div class="footer-coluna">
+            <h4>INSTITUCIONAL</h4>
+            <ul>
+                <li><a href="#">Quem Somos</a></li>
+                <li><a href="#">Política de Envio</a></li>
+                <li><a href="#">Política de Devolução</a></li>
+                <li><a href="#">Fale Conosco</a></li>
+            </ul>
+        </div>
 
-<!--WHATSAPP-->
-    <a href="https://wa.me/558588981551?text=Oi,%20vim%20pelo%20catálogo" class="whatsapp" target="_blank" rel="noopener">
-        <img src="whatsapplogo.png" alt="WhatsApp">
-    </a>
-<!--WHATSAPP-->
+<!-- Atendimento -->
+<div class="footer-coluna">
+    <h4>ATENDIMENTO</h4>
+    <ul>
+        <li><a href="https://wa.me/5511999999999" target="_blank"><i class="fab fa-whatsapp"></i>(11) 99999-9999</a></li>
+        <li><a href="mailto:contato@fabianoreef.com"><i class="fas fa-envelope"></i>contato@fabianoreef.com</a></li>
+    </ul>
+</div>
 
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-<script src="script.js"></script>
+        <!-- Formas de Pagamento e Selos -->
+        <div class="footer-coluna">
+            <h4>FORMAS DE PAGAMENTO</h4>
+            <div class="formas-pagamento">
+                <img src="cartoes/1.png" alt="Visa">
+                <img src="cartoes/2.webp" alt="MasterCard">
+                <img src="cartoes/3.png" alt="American Express">
+                <img src="cartoes/4.webp" alt="Elo">
+                <img src="cartoes/5.webp" alt="Boleto">
+                <img src="cartoes/6.webp" alt="Boleto">
+                <img src="cartoes/7.webp" alt="Boleto">
+                <img src="cartoes/8.webp" alt="Boleto">
+
+            </div>
+            <h4>SEGURANÇA</h4>
+            <div class="selos-seguranca">
+                <img src="cartoes/segurança.png" alt="Selo 1">
+                <img src="cartoes/selo_lojaprotegida.gif" alt="Selo 2">
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p class="copy">&copy; 2025 Fabiano Reef. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
